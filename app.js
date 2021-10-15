@@ -149,8 +149,6 @@
 
 
 
-
-
 class PesoRef {
     constructor (condicion,actividadRecom,intensidad) {
             this.condicion = condicion
@@ -158,8 +156,8 @@ class PesoRef {
             this.intensidad = intensidad
 }
     // Metodo
-    preguntarNombre(){
-        prompt('Ingrese su nombre')
+    preguntarNombre() {
+        let nombre = prompt('Ingrese su nombre')
         return nombre
     }
 
@@ -181,9 +179,8 @@ const pesoRef4 = new PesoRef ("Obesidad","Spinning o Entrenamiento Personalizado
 const indiceCorporal = () => {
     let peso =  parseInt(prompt('Ingrese su peso'))
     let altura = parseInt(prompt('Ingrese su altura'))
-    preguntarNombre()
     let resultado = Math.round( peso / (altura * altura)*10000)
-    alert('hola' + nombre + 'su IMC es de' + " " + resultado)
+    alert('hola' + ' ' + pesoRef1.preguntarNombre() + ' su IMC es de' + " " + resultado)
     nivelPeso(resultado)
 }
 
@@ -208,11 +205,7 @@ const nivelPeso = (resultado) => {
     }
 }
 
-// indiceCorporal()
-
-
-
-
+indiceCorporal()
 
 
 
