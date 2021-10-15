@@ -210,7 +210,7 @@ indiceCorporal()
 
 
 
-
+// agregar a futuro un switch para elección de profesores
 
 
 
